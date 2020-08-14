@@ -21,8 +21,11 @@ const App = () => {
 		<div className="container">
 			<div className="text">{!data ? 'loading...' : data}</div>
 			<br />
-			<div>Count: {count}</div>
-			<button className="btn" onClick={() => setCount(c => c + 1)}>increment</button>
+			<div className="count-btn-container">
+				<div className="count">Count: {count}</div>
+				<button className="btn" onClick={() => setCount(c => c + 1)}>+</button>
+				<button className="btn" onClick={() => setCount(c => c - 1)}>-</button>
+			</div>
 		</div>
 	);
 } 

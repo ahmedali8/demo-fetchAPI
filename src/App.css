@@ -22,6 +22,13 @@ body {
     margin: auto 0;
 }
 
+.count-btn-container {
+    position: absolute;
+    top: 55%;
+    left: 33%;
+    text-align: center;
+}
+
 .text {
     margin-top: 20px;
     margin-bottom: 50px;
@@ -31,19 +38,20 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     cursor: pointer;
-    background-color: #50b6f1;
-    border: 0px solid #50b6f1;
+    background-color: #000;
+    border: 0px solid #000;
     border-radius: 2px;
     color: #fff;
-    font-size: 18px;
-    padding: 6px 15px;
+    font-size: 30px;
+    width: 50px;
+    padding: 2px 15px;
     margin: 5px;
     transition: 0.2s ease;
 }
 
 .btn:hover {
     background-color: #fff;
-    color: #50b6f1;
+    color: #000;
 }
 
 .btn:focus {
