@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 
 export const useFetch = (url) => {
-    const [state, setState] = useState({ data: null, loading: true });
+    const [state, setState] = useState({ data: null });
     
     useEffect(() => {
         /*
@@ -18,12 +18,12 @@ export const useFetch = (url) => {
         // Async Await syntax
         const fetchData = async () => {
             const response = await fetch(url);
-            const data = await response.text();
+            const incomingData = await response.text();
 
-            setState({ data: data, loading: true });
+            setState({ data: incomingData });
         }
         fetchData();
-    });
+    }, [url, setState]);
         
     return state;
 }
